@@ -15,7 +15,7 @@ body {
 }
 
 :root {
-  margin: 0 120px;
+  /* margin: 0 120px; */
 }
 
 header {
@@ -23,6 +23,7 @@ header {
   flex-direction: row;
   margin-top: 36px;
   margin-bottom: 63px;
+  margin: 0 120px;
 }
 
 .logo-wrp {
@@ -34,7 +35,7 @@ header {
   margin-right: 288px;
 }
 
-nav ul {
+nav {
   width: 645px;
   display: flex;
   flex-direction: row;
@@ -72,26 +73,34 @@ nav ul {
 } */
 
 .main-screen {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
+}
+
+.container {
+  max-width: 1203px;
 }
 
 .main-screen__left {
   border: 1px solid green;
-  /* max-width: 515px; */
+  max-width: 515px;
   height: 222px;
   margin-right: 47px;
   margin-top: 136px;
 }
 
-.main-screen__tagline {
-  width: 414px;
+h4  {
   font-family: 'Cedarville Cursive';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 53px;
   color: #444A4A;
+}
+
+.main-screen__tagline {
+  width: 414px;
   margin-bottom: 26px;
 }
 
@@ -153,22 +162,178 @@ nav ul {
 
 .social-icons {
   transform: rotate(-90deg);
-  height: 32px;
-  width: 291px;
+  /* height: 32px;
+  width: 291px; */
   display: flex;
   align-self: end;
   margin-bottom: 112px;
+  margin-left: -40px;
 }
+
 .social-icons h3 {
   width: 115px;
   color: #444A4A;
   font-family: 'Josefin Sans';
   font-size: 28px;
   font-weight: 700;
-/* line-height: 28px; */
-  /* transform: rotate(-90deg); */
 }
 
 .social-icons img {
   margin-left: 14px;
 }
+
+.about {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 194px;
+  margin-bottom: 109px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .about_italic,
+.promotion .promotion_italic {
+  position: absolute;
+  transform: rotate(-90deg);
+  color: #000000;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.about .about_italic {
+  left: -39px;
+}
+
+.promotion .promotion_italic {
+  right: -48px;
+}
+
+.about .about_bg {
+  width: 380px;
+  height: 287px;
+  background-color: #FAE9E0;
+  position: relative;
+}
+
+.about .about_bg img {
+  position: absolute;
+  top: 78px;
+  left: 28px;
+}
+
+.about .about_wrapper {
+  max-width: 645px;
+}
+
+.about .about_wrapper .about_title,
+.promotion .promotion_wrapper .promotion_title {
+  color: #000000;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 63px;
+/* line-height: 63px; */
+  margin-bottom: 25px;
+}
+
+.about .about_wrapper .about_text,
+.promotion .promotion_wrapper .promotion_text,
+.slider .slider_wrp .cards .card_wrp .card_text {
+  color: #444A4A;
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+  letter-spacing: 0.001em;
+}
+
+.promotion {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promotion .promotion_wrapper {
+  max-width: 615px;
+}
+
+.promotion .bnt-order {
+  margin-top: 24px;
+}
+
+.promotion .promotion_bg {
+  width: 410px;
+  height: 276px;
+  background-color: #E3EBE7;;
+  position: relative;
+}
+
+.slider {
+  margin: 0;
+  height: 550px;
+  background-color: rgb(45, 99, 94, .08);
+  display: flex;
+}
+
+.slider .slider_wrp {
+  width: 1200px;
+  height: 458px;
+  margin: 0 auto;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .slider_wrp .slider_arrow {
+  width: 22px;
+}
+
+.slider .slider_wrp .cards {
+  min-width: 1084px;
+  display: flex;
+  justify-content: space-between;
+} 
+
+.slider .slider_wrp .cards .card_wrp {
+  width: 340px;
+  height: 458px;
+  padding: 45px 62px 47px 54px;
+  background: #FFFFFF;
+  box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+  border-radius: 25px;
+}
+
+.slider .slider_wrp .cards .card_wrp .card_title {
+  color: #000000;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  /* line-height: 28px; */
+text-align: center;
+}
+
+.slider .slider_wrp .cards .card_wrp .card_text {
+  margin-top: 25px;
+  margin-bottom: 43px;
+  text-align: center;
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+footer hr {
+  width: 102px;
+  height: 2px;
+  border-top: 2px solid #444A4A;
+  background-color: #444A4A;
+}
+
+
