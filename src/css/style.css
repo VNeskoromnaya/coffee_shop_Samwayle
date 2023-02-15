@@ -14,16 +14,12 @@ body {
   /* background-color: grey; */
 }
 
-:root {
-  /* margin: 0 120px; */
-}
-
 header {
   display: flex;
   flex-direction: row;
+  margin: 0 120px;
   margin-top: 36px;
   margin-bottom: 63px;
-  margin: 0 120px;
 }
 
 .logo-wrp {
@@ -42,6 +38,7 @@ nav {
   list-style-type: none;
   padding: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__item {
@@ -83,7 +80,7 @@ nav {
 }
 
 .main-screen__left {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   max-width: 515px;
   height: 222px;
   margin-right: 47px;
@@ -91,8 +88,8 @@ nav {
 }
 
 h4  {
-  font-family: 'Cedarville Cursive';
-  font-style: normal;
+  /* font-family: 'Cedarville Cursive'; */
+  font-family: 'Cedarville Cursive', cursive;
   font-weight: 400;
   font-size: 28px;
   line-height: 53px;
@@ -105,8 +102,8 @@ h4  {
 }
 
 .main-screen__title {
-  font-family: 'Josefin Sans';
-  font-style: normal;
+  /* font-family: 'Josefin Sans'; */
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 63px;
   line-height: 63px;
@@ -131,7 +128,7 @@ h4  {
 }
 
 .main-screen__right {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   /* width: 570px; */
   display: flex;
   flex-direction: row;
@@ -162,8 +159,8 @@ h4  {
 
 .social-icons {
   transform: rotate(-90deg);
-  /* height: 32px;
-  width: 291px; */
+  height: 32px;
+  /* width: 291px; */
   display: flex;
   align-self: end;
   margin-bottom: 112px;
@@ -171,9 +168,10 @@ h4  {
 }
 
 .social-icons h3 {
-  width: 115px;
+  width: 121px;
   color: #444A4A;
-  font-family: 'Josefin Sans';
+  /* font-family: 'Josefin Sans'; */
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
   font-weight: 700;
 }
@@ -193,7 +191,8 @@ h4  {
 }
 
 .about .about_italic,
-.promotion .promotion_italic {
+.promotion .promotion_italic,
+.footer_map .footer_italic {
   position: absolute;
   transform: rotate(-90deg);
   color: #000000;
@@ -207,6 +206,10 @@ h4  {
 
 .promotion .promotion_italic {
   right: -48px;
+}
+
+.footer_map .footer_italic {
+  right: -38px;
 }
 
 .about .about_bg {
@@ -229,8 +232,8 @@ h4  {
 .about .about_wrapper .about_title,
 .promotion .promotion_wrapper .promotion_title {
   color: #000000;
-  font-family: 'Josefin Sans';
-  font-style: normal;
+  /* font-family: 'Josefin Sans'; */
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 63px;
 /* line-height: 63px; */
@@ -310,8 +313,8 @@ h4  {
 
 .slider .slider_wrp .cards .card_wrp .card_title {
   color: #000000;
-  font-family: 'Josefin Sans';
-  font-style: normal;
+  /* font-family: 'Josefin Sans'; */
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 28px;
   /* line-height: 28px; */
@@ -329,11 +332,63 @@ footer {
   margin: 0 auto;
 }
 
-footer hr {
+footer .footer_wrapper {
+  display: flex;
+}
+
+footer .footer_wrapper hr {
   width: 102px;
   height: 2px;
   border-top: 2px solid #444A4A;
   background-color: #444A4A;
+  margin: 165px 32px 0 32px;
 }
+
+footer .footer_map {
+  position: relative;
+  padding: 129px 0 114px 0;
+}
+
+footer .footer_contacts {
+  padding-top: 142px;
+}
+
+footer .footer_contacts .contacts_title {
+  color: #000000;
+  /* font-family: 'Josefin Sans'; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  /* line-height: 45px; */
+  letter-spacing: 0.02em;
+  margin-bottom: 21px;
+}
+
+footer .footer_contacts .contacts_line {
+  color: #444A4A;
+  font-family: 'Alegreya Sans';
+  font-weight: 400;
+  font-size: 19px;
+  /* line-height: 36px; */
+  letter-spacing: 0.001em;
+  margin-bottom: 16px;
+}
+
+footer .footer_contacts .contacts_line:last-child {
+  margin-bottom: 0;
+}
+
+footer .sign {
+  color: #444A4A;
+  font-family: 'Alegreya Sans';
+  font-weight: 400;
+  font-size: 19px;
+/* line-height: 36px; */
+text-align: center;
+letter-spacing: 0.001em;
+margin-bottom: 5px;
+}
+
+
 
 
